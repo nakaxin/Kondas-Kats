@@ -78,6 +78,15 @@ nav ul li a:hover {
     height:400px;
 }
 
+@media screen and (max-width:1080px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1em;
+        grid-row-gap: 100px;
+    }
+}
+
 /*main content*/
 .main-content {
     background-color: #FFEAEA;
@@ -239,6 +248,7 @@ ol li::before {
 div.gallery {
     border: 3px dotted #FFB0B0;
     padding: 6px;
+    padding-bottom: 12px;
   }
   
   div.gallery:hover {
@@ -255,28 +265,20 @@ div.gallery {
   }
   
   .responsive {
-    padding: 6px 6px;
+    padding: 3px;
     float: left;
-    width: 24.99999%;
+    width: 25%;
+  }
+
+  .desc{
+    height: 60px;
   }
   
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 1280px) {
     .responsive {
-      width: 49.99999%;
+      width: 40%;
       margin: 6px 0;
     }
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  }
-  
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
   }
 
 /*Table*/
